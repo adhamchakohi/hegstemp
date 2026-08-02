@@ -34,7 +34,7 @@
         },
         autoplay: reduceMotion
           ? false
-          : { delay: 4500, disableOnInteraction: false },
+          : { delay: 4500, disableOnInteraction: true },
         pagination: {
           el: el.querySelector('.swiper-pagination'),
           type: 'fraction'
