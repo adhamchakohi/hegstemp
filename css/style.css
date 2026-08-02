@@ -17,7 +17,6 @@
   --lime:         #b8d935;   /* signature accent (pub logo)    */
   --lime-bright:  #d3ec60;   /* small text accents             */
   --lime-soft:    rgba(184, 217, 53, 0.38);
-  --gold-glow:    rgba(201, 162, 74, 0.10);  /* candlelight whisper, stage only */
   --ink:          #131d07;   /* text on lime                   */
   --font-display: "Fraunces", Georgia, serif;
   --font-body:    "Manrope", "Helvetica Neue", Arial, sans-serif;
@@ -193,12 +192,7 @@ body::after {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 22px;
-  background:
-    radial-gradient(82% 58% at 50% 38%, var(--gold-glow), transparent 70%),
-    linear-gradient(180deg, var(--panel-hi) 0%, var(--panel) 100%);
-  box-shadow:
-    0 34px 64px rgba(0, 0, 0, 0.52),
-    inset 0 1px 0 rgba(240, 231, 211, 0.07);
+  background: linear-gradient(180deg, var(--panel-hi) 0%, var(--panel) 100%);
 }
 
 /* One treatment fits all: photos and cutouts both sit contained
