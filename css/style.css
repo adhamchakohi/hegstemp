@@ -172,8 +172,8 @@ body::after {
 }
 
 /* The stage: one consistent treatment for every drink image.
-   Arch panel + candlelight glow + thin border. It bottom-aligns
-   in its flex area so the arch sits close above the text. */
+   Rectangle panel + candlelight glow + thin border. It bottom-aligns
+   in its flex area so the panel sits close above the text. */
 .drink-figure {
   flex: 1 1 auto;
   min-height: 0;
@@ -192,7 +192,7 @@ body::after {
   max-height: 100%;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 999px 999px 22px 22px;
+  border-radius: 22px;
   background:
     radial-gradient(82% 58% at 50% 38%, var(--gold-glow), transparent 70%),
     linear-gradient(180deg, var(--panel-hi) 0%, var(--panel) 100%);
@@ -272,7 +272,7 @@ body::after {
 
 .drink-price {
   margin-top: 9px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-indent: 0.22em;
@@ -417,7 +417,7 @@ body.is-last-page .scroll-hint {
   }
   .drink-info  { min-height: 190px; }
   .drink-name  { font-size: clamp(30px, 4.4vw, 42px); }
-  .drink-price { font-size: 14px; }
+  .drink-price { font-size: 16px; }
   .drink-desc  { font-size: 15px; max-width: 40ch; }
 }
 

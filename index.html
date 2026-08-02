@@ -30,8 +30,8 @@
     Images:       to swap a drink image, drop the new file in assets/
                   and change the src — no class or CSS changes needed.
                   Where a drink still shows an <svg> placeholder,
-                  replace the whole <svg>…</svg> block with one
-                  <img class="drink-img" src="assets/…"> line.
+                  replace the whole <svg>…</svg> block with a single
+                  drink-img <img> tag pointing at the new PNG in assets/.
     Badge:        keep the <span class="drink-badge"> line only on
                   drinks that should show "New!" — delete it otherwise.
     Arrows/counter: the swiper-button-prev/next chevrons and the
@@ -75,7 +75,7 @@
               <div class="drink-info">
                 <span class="drink-badge">New!</span>
                 <h2 class="drink-name">Störtebecker United Style-Lager</h2>
-                <p class="drink-price">€6.70</p>
+                <p class="drink-price">€4.90</p>
                 <p class="drink-desc">Mild, gently hopped style lager.</p>
               </div>
             </article>
@@ -158,16 +158,13 @@
               </div>
             </article>
 
-            <!-- DRINK 3 · Corona 0.0 (no photo — elegant placeholder) -->
+            <!-- DRINK 3 · Corona 0.0 (photo) -->
             <article class="swiper-slide drink">
               <figure class="drink-figure">
                 <div class="drink-stage">
-                  <svg class="drink-img drink-placeholder" viewBox="0 0 120 300"
-                       role="img" aria-label="Corona 0.0 — bottle illustration">
-                    <path class="bottle-body" d="M48 24 V72 C48 92 26 100 26 124 V268 Q26 284 42 284 H78 Q94 284 94 268 V124 C94 100 72 92 72 72 V24 Z"/>
-                    <rect class="bottle-cap" x="46" y="10" width="28" height="14" rx="3.5"/>
-                    <path class="bottle-lines" d="M26 168 H94 M26 212 H94"/>
-                  </svg>
+                  <img class="drink-img" src="assets/Corona.png" 
+                       alt="Corona 0.0 — bottle"
+                       loading="lazy" decoding="async">
                 </div>
               </figure>
               <div class="drink-info">
@@ -188,7 +185,7 @@
               </figure>
               <div class="drink-info">
                 <h2 class="drink-name">Ratsherrn Pils 0.0</h2>
-                <p class="drink-price">€3.90</p>
+                <p class="drink-price">€5.00</p>
                 <p class="drink-desc">Hamburg-brewed pilsner, alcohol-free.</p>
               </div>
             </article>
@@ -207,17 +204,13 @@
         <div class="swiper swiper--drinks">
           <div class="swiper-wrapper">
 
-            <!-- DRINK 1 · Powers (placeholder — no photo yet) -->
+            <!-- DRINK 1 · Powers (photo) -->
             <article class="swiper-slide drink">
               <figure class="drink-figure">
                 <div class="drink-stage">
-                  <svg class="drink-img drink-placeholder" viewBox="0 0 120 300"
-                       role="img" aria-label="Powers — whiskey bottle illustration">
-                    <path class="bottle-body" d="M48 26 V64 C48 80 28 86 26 106 V264 Q26 284 44 284 H76 Q94 284 94 264 V106 C92 86 72 80 72 64 V26 Z"/>
-                    <rect class="bottle-cap" x="46" y="10" width="28" height="16" rx="3.5"/>
-                    <rect class="bottle-lines" x="36" y="164" width="48" height="58" rx="4"/>
-                    <path class="bottle-lines" d="M42 186 H78 M42 200 H78"/>
-                  </svg>
+                  <img class="drink-img" src="assets/Powers.png" 
+                       alt="Powers — whiskey bottle"
+                       loading="lazy" decoding="async">
                 </div>
               </figure>
               <div class="drink-info">
@@ -227,16 +220,13 @@
               </div>
             </article>
 
-            <!-- DRINK 2 · Jameson Black Barrel (placeholder — no photo yet) -->
+            <!-- DRINK 2 · Jameson Black Barrel (photo) -->
             <article class="swiper-slide drink">
               <figure class="drink-figure">
                 <div class="drink-stage">
-                  <svg class="drink-img drink-placeholder" viewBox="0 0 140 300"
-                       role="img" aria-label="Jameson Black Barrel — whiskey bottle illustration">
-                    <path class="bottle-body" d="M58 30 V52 C58 68 24 76 22 108 V262 Q22 284 46 284 H94 Q118 284 118 262 V108 C116 76 82 68 82 52 V30 Z"/>
-                    <rect class="bottle-cap" x="54" y="12" width="32" height="18" rx="4"/>
-                    <path class="bottle-lines" d="M22 168 H118 M22 212 H118"/>
-                  </svg>
+                  <img class="drink-img" src="assets/JamesonBB.png" 
+                       alt="Jameson Black Barrel — whiskey bottle"
+                       loading="lazy" decoding="async">
                 </div>
               </figure>
               <div class="drink-info">
@@ -246,34 +236,29 @@
               </div>
             </article>
 
-            <!-- DRINK 3 · The Whistler (placeholder — no photo yet) -->
+            <!-- DRINK 3 · The Whistler (photo) -->
             <article class="swiper-slide drink">
               <figure class="drink-figure">
                 <div class="drink-stage">
-                  <svg class="drink-img drink-placeholder" viewBox="0 0 200 260"
-                       role="img" aria-label="The Whistler — glencairn glass illustration">
-                    <path class="bottle-body" d="M76 32 C72 66 60 86 60 118 C60 152 82 168 88 178 L84 190 C78 194 66 198 66 206 Q66 214 78 214 H122 Q134 214 134 206 C134 198 122 194 116 190 L112 178 C118 168 140 152 140 118 C140 86 128 66 124 32 Z"/>
-                    <path class="bottle-lines" d="M68 130 C84 138 116 138 132 130"/>
-                  </svg>
+                  <img class="drink-img" src="assets/Whistler.png" 
+                       alt="The Whistler — whiskey bottle"
+                       loading="lazy" decoding="async">
                 </div>
               </figure>
               <div class="drink-info">
                 <h2 class="drink-name">The Whistler</h2>
-                <p class="drink-price">€6.70</p>
+                <p class="drink-price">€7.50</p>
                 <p class="drink-desc">Small-batch Irish whiskey from the Boann distillery.</p>
               </div>
             </article>
 
-            <!-- DRINK 4 · Skibereen Eagle (placeholder — no photo yet) -->
+            <!-- DRINK 4 · Skibereen Eagle (photo) -->
             <article class="swiper-slide drink">
               <figure class="drink-figure">
                 <div class="drink-stage">
-                  <svg class="drink-img drink-placeholder" viewBox="0 0 200 260"
-                       role="img" aria-label="Skibereen Eagle — tumbler illustration">
-                    <path class="bottle-body" d="M56 52 L64 198 Q65 212 80 212 H120 Q135 212 136 198 L144 52 Z"/>
-                    <path class="bottle-lines" d="M63 118 H137 M70 178 H130"/>
-                    <rect class="bottle-lines" x="86" y="88" width="28" height="28" rx="4" transform="rotate(12 100 102)"/>
-                  </svg>
+                  <img class="drink-img" src="assets/SkibereenEagle.png" 
+                       alt="Skibereen Eagle — whiskey bottle"
+                       loading="lazy" decoding="async">
                 </div>
               </figure>
               <div class="drink-info">
